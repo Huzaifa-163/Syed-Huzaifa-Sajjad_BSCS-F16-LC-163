@@ -3,29 +3,6 @@ Syed Huzaifa Sajjad, BSCS-F16-LC-163
 
 This is student module that I have created in CShtml and C#
 
-@model Attendance.ViewModels.StudentViewModel
-@{
-    ViewBag.Title = "Student";
-}
-@{
-    List<SelectListItem> listItems = new List<SelectListItem>();
-    listItems.Add(new SelectListItem
-    {
-        Text = "BS(CS)",
-        Value = "BS(CS)"
-    });
-    listItems.Add(new SelectListItem
-    {
-        Text = "BS(SE)",
-        Value = "BS(SE)",
-        Selected = true
-    });
-    listItems.Add(new SelectListItem
-    {
-        Text = "BS(IT)",
-        Value = "BS(IT)"
-    });
-}
 
 @Html.Partial("_NavBar")
 <div>
@@ -129,6 +106,29 @@ namespace Attendance.Models
         public string extra { get; set; }
        
     }
+}
+@model Attendance.ViewModels.StudentViewModel
+@{
+    ViewBag.Title = "Student";
+}
+@{
+    List<SelectListItem> listItems = new List<SelectListItem>();
+    listItems.Add(new SelectListItem
+    {
+        Text = "BS(CS)",
+        Value = "BS(CS)"
+    });
+    listItems.Add(new SelectListItem
+    {
+        Text = "BS(SE)",
+        Value = "BS(SE)",
+        Selected = true
+    });
+    listItems.Add(new SelectListItem
+    {
+        Text = "BS(IT)",
+        Value = "BS(IT)"
+    });
 }
 
 
