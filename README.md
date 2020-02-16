@@ -76,14 +76,7 @@ This is student module that I have created in CShtml and C#
 
 -----------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
-namespace Attendance.Models
-{
     public class Student
     {
         public int id { get; set; }
@@ -106,7 +99,7 @@ namespace Attendance.Models
         public string extra { get; set; }
        
     }
-}
+
 @model Attendance.ViewModels.StudentViewModel
 @{
     ViewBag.Title = "Student";
