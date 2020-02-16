@@ -96,57 +96,7 @@ This is student module that I have created in CShtml and C#
         </div>
     </div>
 </div>
-<div id="add_client" class="modal custom-modal fade" role="dialog">
-    <div class="modal-dialog">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <div class="modal-content modal-lg">
-            <div class="modal-header">
-                <h4 class="modal-title">Add Instructor</h4>
-            </div>
-            <div class="modal-body">
-                <div class="m-b-30">
 
-                    <div class="row">
-                        @using (Html.BeginForm("AddStudent", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                        {
-                            <div class="form-group col-md-6">
-                                @Html.LabelFor(m => m.students.name, new { @class = "control-label" })
-                                @Html.TextBoxFor(m => m.students.name, new { @class = "form-control" , required="required"})
-                                
-                            </div>
-
-
-                            <div class="form-group col-md-6">
-                                @Html.LabelFor(m => m.students.rollno, new { @class = "control-label" })
-                                @Html.TextBoxFor(m => m.students.rollno, new { @class = "form-control", required = "required" })
-                               
-                            </div>
-
-                            <div class="form-group col-md-6">
-                                @Html.LabelFor(m => m.students.section, new { @class = "control-label" })
-                                @Html.DropDownListFor(m => m.students.section, listItems, "Select Section", new { @class = "form-control" })
-                            </div>
-
-                            <div class="form-group col-md-6">
-                                @Html.LabelFor(m => m.students.img_path, new { @class = "control-label" })
-                                <input name="image" type="file" class="form-control">
-
-                            </div>
-
-                            @Html.HiddenFor(m => m.students.id)
-
-                            <div class="m-t-20 text-center">
-                                <button class="btn btn-primary" type="submit">Add Student</button>
-                            </div>
-                        }
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 -----------------------------------------------------
 
 using System;
