@@ -24,13 +24,8 @@ namespace Attendance.Models
         public string extra { get; set; }
        
     }
-}
-
----------------------------------------
 
 
-namespace Attendance.Models
-{
     public class Student
     {
         public int id { get; set; }
@@ -54,29 +49,7 @@ namespace Attendance.Models
        
     }
 }
-@model Attendance.ViewModels.StudentViewModel
-@{
-    ViewBag.Title = "Student";
-}
-@{
-    List<SelectListItem> listItems = new List<SelectListItem>();
-    listItems.Add(new SelectListItem
-    {
-        Text = "BS(CS)",
-        Value = "BS(CS)"
-    });
-    listItems.Add(new SelectListItem
-    {
-        Text = "BS(SE)",
-        Value = "BS(SE)",
-        Selected = true
-    });
-    listItems.Add(new SelectListItem
-    {
-        Text = "BS(IT)",
-        Value = "BS(IT)"
-    });
-}
+
 ---------------------------------------------------------
     
 @Html.Partial("_NavBar")
