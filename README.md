@@ -1,7 +1,7 @@
-# Voice-Recognition-Attendance-Managment-System
-Syed Huzaifa Sajjad, BSCS-F16-LC-163
+# Syed Huzaifa Sajjad, BSCS-F16-LC-163
+Voice-Recognition-Attendance-Managment-System
 
-This is student module that I have created in CShtml and C#
+This is student module according to 16th week plan that I have created in CShtml and C#: week 9
 
 
 @Html.Partial("_NavBar")
