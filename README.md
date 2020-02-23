@@ -55,6 +55,14 @@ Syed Huzaifa Sajjad, BSCS-F16-LC-163
 ______________________________
     
 
+<div>
+    @{
+        if (@Model.extra != null && @Model.extra != "")
+        {
+            ViewBag.data = @Model.extra;
+            <center class="alert alert-info">@Model.extra<a class='close' data-dismiss='alert'>&times;</a></center>
+        }
+    }
     <div class="content container-fluid">
         <div class="row">
             <div class="col-sm-4 col-xs-3">
