@@ -219,7 +219,7 @@ public class InstructorEditModel
         Value = "DSA"
     });
 }
-@Html.Partial("_NavBar")
+
 <div>
     @{
         if (@Model.extra != "" && @Model.extra != null)
